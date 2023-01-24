@@ -1,0 +1,175 @@
+@import '../styles/vars.scss';
+
+.wrapper {
+  max-width: 1224px;
+  padding: 0 25px;
+  margin: 0 auto 333px;
+  @include lg {
+    margin-bottom: 26vw;
+  }
+  @include sm {
+    padding: 0 16px;
+    max-width: 410px;
+    margin: 0 auto 97px;
+  }
+  & h2 {
+    margin-bottom: 62px;
+    @include lg {
+      margin-bottom: 4.8vw;
+    }
+    @include sm {
+      margin-bottom: 15px;
+    }
+  }
+  & p {
+    color: $white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 37px;
+    max-width: 634px;
+    @include lg {
+      font-size: 1.72vw;
+      line-height: 2vw;
+      margin-bottom: 2.9vw;
+      max-width: 51vw;
+    }
+    @include sm {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 38px;
+      max-width: 314px;
+    }
+  }
+  & .item {
+    margin-bottom: 115px;
+    @include lg {
+      margin-bottom: 9vw;
+    }
+    @include sm {
+      margin-bottom: 60px;
+    }
+    & .text {
+      color: $white;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 37px;
+      @include lg {
+        font-size: 1.72vw;
+        line-height: 2vw;
+        margin-bottom: 2.9vw;
+      }
+      @include sm {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 15px;
+      }
+      & ul {
+        padding-top: 7px;
+      }
+    }
+
+    & h4 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 38px;
+      margin-bottom: 34px;
+      color: $primary-text;
+      @include lg {
+        font-size: 2.5vw;
+        line-height: 3vw;
+        margin-bottom: 2.65vw;
+      }
+      @include sm {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 18px;
+      }
+    }
+    & .card {
+      position: relative;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 14px 19px;
+      border: 14px solid rgba(224, 123, 247, 0.1);
+      border-radius: 15px;
+      max-width: 373px;
+      @include lg {
+        max-width: 30vw;
+      }
+      @include sm {
+        max-width: 258px;
+        border-width: 10px;
+        padding: 9px 13px;
+      }
+      & p {
+        margin-bottom: 12px;
+        &:nth-child(1) {
+          color: $primary-text;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 22px;
+          @include lg {
+            font-size: 1.4vw;
+            line-height: 1.7vw;
+          }
+          @include sm {
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+        &:nth-child(2) {
+          color: $white;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+          @include lg {
+            font-size: 1.1vw;
+            line-height: 1.33vw;
+          }
+          @include sm {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+        &:nth-child(3) {
+          color: $primary-text;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 22px;
+          margin-bottom: 0;
+          @include lg {
+            font-size: 1.4vw;
+            line-height: 1.7vw;
+          }
+          @include sm {
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+      }
+      & .btn {
+        position: absolute;
+        right: 19px;
+        bottom: 14px;
+        color: $white;
+        background: rgba(224, 123, 247, 0.35);
+        border-radius: 40px;
+        padding: 10px 45px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        @include lg {
+          font-size: 1.4vw;
+          line-height: 1.7vw;
+          padding: 0.8vw 3.5vw;
+        }
+        @include sm {
+          font-size: 13px;
+          line-height: 16px;
+          padding: 6px 28px;
+        }
+      }
+    }
+  }
+}

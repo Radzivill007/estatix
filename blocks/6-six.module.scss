@@ -1,0 +1,208 @@
+@import '../styles/vars.scss';
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto 347px;
+  @include lg {
+    margin-bottom: 27vw;
+    max-width: 93.75vw;
+  }
+  @include sm {
+    padding: 0 15px;
+    max-width: 430px;
+    margin-bottom: 260px;
+  }
+  & h2 {
+    margin-bottom: 28px;
+  }
+  & .inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include sm {
+      top: 88px;
+    }
+    & svg {
+      max-width: 570px;
+      @include lg {
+        max-width: 45vw;
+      }
+      @include sm {
+        max-width: 201px;
+      }
+    }
+    & .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      text-align: center;
+      color: $white;
+      @include lg {
+        font-size: 3.125vw;
+        line-height: 3.75vw;
+      }
+      @include sm {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    & > div p {
+      position: absolute;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center;
+      max-width: 491px;
+      padding: 0 25px;
+      @include lg {
+        font-size: 1.72vw;
+        line-height: 2vw;
+        max-width: 39vw;
+        padding: 0 1.3vw;
+      }
+      @include sm {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: unset;
+        text-align: left;
+        padding: unset;
+      }
+      @include xs {
+        font-size: 12px;
+        line-height: 15px;
+      }
+      &:nth-child(1) {
+        position: absolute;
+        top: -130px;
+        left: 0;
+        @include lg {
+          top: -10vw;
+        }
+        @include sm {
+          max-width: 330px;
+          top: -88px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 187px;
+          left: 302px;
+          width: 187px;
+          height: 3px;
+          background: #8962f3;
+          transform: rotate(60deg);
+          @include lg {
+            top: 14.6vw;
+            left: 23.2vw;
+            width: 14.6vw;
+          }
+          @include sm {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(2) {
+        top: -140px;
+        right: 0;
+        @include lg {
+          top: -11vw;
+        }
+        @include sm {
+          max-width: 214px;
+          top: -21px;
+        }
+        @include xs {
+            top: -10px;
+            right: -15px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 167px;
+          left: 14px;
+          width: 175px;
+          height: 3px;
+          background: #e17bf8;
+          transform: rotate(-60deg);
+          @include lg {
+            top: 13.2vw;
+            left: 0.8vw;
+            width: 13.7vw;
+          }
+          @include sm {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(3) {
+        bottom: -125px;
+        left: 0;
+        @include lg {
+          bottom: -9.8vw;
+        }
+        @include sm {
+          max-width: 213px;
+          top: 366px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: -91px;
+          left: 297px;
+          width: 184px;
+          height: 3px;
+          background: #8962f3;
+          transform: rotate(-60deg);
+          @include lg {
+            top: -7.1vw;
+            left: 23.2vw;
+            width: 14.375vw;
+          }
+          @include sm {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(4) {
+        bottom: -120px;
+        right: 0;
+        max-width: 531px;
+        @include lg {
+          bottom: -9.375vw;
+          max-width: 42vw;
+        }
+        @include sm {
+          max-width: 191px;
+          top: 274px;
+        }
+        @include xs {
+          top: 290px;
+          right: -10px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: -83px;
+          left: 64px;
+          width: 160px;
+          height: 3px;
+          background: #e17bf8;
+          transform: rotate(60deg);
+          @include lg {
+            top: -6.5vw;
+            left: 4vw;
+            width: 12.5vw;
+          }
+          @include sm {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

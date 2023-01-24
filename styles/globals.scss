@@ -1,0 +1,153 @@
+@import './vars.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: $black-background;
+  color: $white;
+}
+
+main {
+  position: relative;
+  padding: 0px;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  @include lg {
+    font-size: 1.56vw;
+    line-height: 1.9vw;
+  }
+  @include sm {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+span {
+  color: $primary-text;
+}
+
+ul {
+  list-style-type: none;
+  & li {
+    margin-bottom: 3px;
+  }
+}
+p {
+  letter-spacing: 0em;
+}
+h1 {
+  color: $white;
+  max-width: 1237px;
+  margin: 0 auto 45px;
+  font-size: 57px;
+  font-weight: 400;
+  line-height: 68px;
+  text-align: center;
+  @include lg {
+    max-width: 92vw;
+    font-size: 4.1vw;
+    line-height: 5vw;
+  }
+  @include sm {
+    max-width: unset;
+    text-align: start;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 58px;
+  }
+  @include xs {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+h2 {
+  color: $white;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include lg {
+    font-size: 3.1vw;
+    line-height: 3.75vw;
+  }
+  @include sm {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+  @include sm {
+    object-fit: unset;
+  }
+  &.top {
+    top: 0;
+    height: 1666px;
+    @include lg {
+      height: 130vw;
+    }
+    @include sm {
+      height: 674px;
+    }
+  }
+  &.bottom {
+    left: 0;
+    bottom: -80px;
+    height: 1084px;
+    @include lg {
+      bottom: 9vw;
+      height: 57vw;
+    }
+    @include sm {
+      height: 645px;
+      bottom: -110px;
+    }
+  }
+}
+
+.d-sm-none {
+  @include sm {
+    display: none;
+  }
+}
+
+.d-sm-block {
+  display: none;
+  @include sm {
+    display: block;
+  }
+}
+
+.privacy {
+  padding: 130px 25px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  & div {
+    font-size: 16px;
+    margin-bottom: 35px;
+    & h4 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}

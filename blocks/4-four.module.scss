@@ -1,0 +1,138 @@
+@import '../styles/vars.scss';
+.wrapper {
+  position: relative;
+  max-width: 1224px;
+  padding: 0 25px;
+  margin: 0 auto 172px;
+  @include lg {
+    margin-bottom: 13.5vw;
+  }
+  @include sm {
+    padding: 0 13px;
+    margin-bottom: 150px;
+    max-width: 334px;
+  }
+  & h2 {
+    margin-bottom: 108px;
+    @include lg {
+      margin-bottom: 8.4vw;
+    }
+    @include sm {
+      margin-bottom: 34px;
+    }
+  }
+  & .vertical {
+    position: absolute;
+    top: 84px;
+  }
+  & .content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 22px 22px 44px;
+    @include sm {
+      flex-direction: column;
+      padding: 0;
+      padding-left: 25px;
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      background: $primary-text;
+      height: 2px;
+      @include sm {
+        width: 2px;
+        height: 112%;
+        top: -20px;
+        transform: unset;
+      }
+    }
+    &::after {
+      top: unset;
+      bottom: -1px;
+      @include sm {
+        display: none;
+      }
+    }
+    & > div {
+      position: relative;
+      color: $white;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 26px;
+      @include lg {
+        font-size: 1.72vw;
+        line-height: 2vw;
+      }
+      @include sm {
+        font-size: 15px;
+        line-height: 18px;
+        flex: unset !important;
+      }
+      &:nth-child(1) {
+        flex: 0 0 31%;
+        @include sm {
+          margin-bottom: 50px;
+        }
+        
+      }
+      &:nth-child(2) {
+        flex: 0 0 25%;
+        padding-top: 5px;
+        @include sm {
+          margin-bottom: 38px;
+          padding-top: 0;
+        }
+      }
+      &:nth-child(3) {
+        flex: 0 0 30%;
+        padding-top: 30px;
+        @include lg {
+          padding-top: 2.35vw;
+        }
+        @include sm {
+          padding-top: 0;
+        }
+      }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(359.36deg, #8962f3 0.49%, #8161ff 0.5%, #e07bf7 99.37%);
+        border-radius: 50%;
+        @include sm {
+          top: 28px;
+          left: -34.5px;
+          transform: unset;
+        }
+      }
+      &::after {
+        top: unset;
+        bottom: -32px;
+        @include sm {
+           display: none;
+        }
+      }
+    }
+    & ul {
+      padding-top: 7px;
+      & li {
+        color: $primary-text;
+        & span {
+          display: inline-block;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
